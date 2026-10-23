@@ -37,8 +37,10 @@ try:
 
     if final_grade >= 75:
         print("Status: PASSED")
+        print("Congratulations! Keep up the good work.")
     else:
         print("Status: FAILED")
-
+        print("Keep practicing and try again.")
+        
 except ValueError:
     print("Error: Please enter valid numbers for the grades.")
