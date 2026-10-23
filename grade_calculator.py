@@ -1,5 +1,11 @@
+print("=== Grade Calculator ===")
+
+print("Quiz Weight: 30%")
+print("Assignment Weight: 30%")
+print("Exam Weight: 40%")
+
 try:
-    name = input("Enter student name: ").strip()
+    name = input("\nEnter student name: ").strip()
 
     if not name:
         print("Error: Student name cannot be empty.")
@@ -15,10 +21,6 @@ try:
 
     final_grade = (quiz * 0.30) + (assignment * 0.30) + (exam * 0.40)
 
-    print("\n=== Grade Result ===")
-    print(f"Student: {name}")
-    print(f"Final Grade: {final_grade:.2f}")
-
     if final_grade >= 90:
         letter_grade = "A"
     elif final_grade >= 80:
@@ -28,6 +30,9 @@ try:
     else:
         letter_grade = "F"
 
+    print("\n=== Grade Result ===")
+    print(f"Student: {name}")
+    print(f"Final Grade: {final_grade:.2f}")
     print(f"Letter Grade: {letter_grade}")
 
     if final_grade >= 75:
