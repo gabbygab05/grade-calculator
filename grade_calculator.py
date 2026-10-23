@@ -19,6 +19,17 @@ try:
     print(f"Student: {name}")
     print(f"Final Grade: {final_grade:.2f}")
 
+    if final_grade >= 90:
+        letter_grade = "A"
+    elif final_grade >= 80:
+        letter_grade = "B"
+    elif final_grade >= 75:
+        letter_grade = "C"
+    else:
+        letter_grade = "F"
+
+    print(f"Letter Grade: {letter_grade}")
+
     if final_grade >= 75:
         print("Status: PASSED")
     else:
