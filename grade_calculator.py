@@ -1,5 +1,10 @@
 try:
-    name = input("Enter student name: ")
+    name = input("Enter student name: ").strip()
+
+    if not name:
+        print("Error: Student name cannot be empty.")
+        exit()
+
     quiz = float(input("Enter quiz grade: "))
     assignment = float(input("Enter assignment grade: "))
     exam = float(input("Enter exam grade: "))
